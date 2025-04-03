@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* .home-section{
+    border: 10px solid black;
+} */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0px 2px 11px silver;
+}
+.navbar h2{
+    font-size: 36px;
+    font-weight: 400px;
+}
+.navbar h2 span{
+    color: #32BDC6;
+}
+.nav-item{
+    display: flex;
+    gap: 30px;
+}
+.nav-item a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.nav-item a:hover{
+    color: #32BDC6;
+}
+.home-section1{
+    background-image: url('./img.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section1::before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home-item{
+    margin: 0 200px;
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+.home-item h1{
+    font-size: 36px;
+    font-weight: 500px;
+}
+.home-item p{
+    font-size: 24px;
+    font-weight: 500px;
+    margin-top: 30px;
+}
+.home-item p span{
+    color: #32BDC6;
+    transition: 0.3s;
+}
+.home-item p span:hover{
+    color: #2798a0;
+}
+.home-item button{
+    background: #32BDC6;
+    color: black;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: 0.3s ease;
+}
+.home-item button:hover{
+    cursor: pointer;
+    background-color: #2798a0;
+    color: white;
+}
+/* ======================================================================================= */
+.card-container{
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+.card{
+    /* border: 2px solid  red; */
+    padding: 10px;
+    position: relative;
+}
+.card-title{
+    color: #32BDC6;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 500px;
+}
+.card-subtitle{
+    line-height: 24px;
+    color: #4D4D4D;
+    font-weight: 500px;
+}
+.icon{
+    color: #32BDC6;
+    margin-top: 10px;
+    font-weight: 500px;
+}
+.card p span{
+    margin-right: 10px;
+}
+.pechat{
+    font-size: 160px;
+    position: absolute;
+    top: -50px;
+    left: -50px; 
+    z-index: -1;
+    color: rgb(243, 243, 243);
+}
+/* ======================================================================================= */
+.img-title{
+    font-size: 30px;
+    text-align: center;
+    margin: 100px 100px;
+}
+.img-title h1{
+    font-size: 64px;
+    font-weight: 500;
+}
+.img-title p{
+    font-size: 24px;
+    color: #4D4D4D;
+}
+/* ========================================================================================== */
+.img-container{
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 30px;
+ }
+ .img-card{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transition: 1s;
+    overflow: hidden;
+ }
+ 
+ 
+.img-card-item{
+    position: absolute;
+    height: 100%;
+ }
+ .img-card:hover .img-card-item{
+    z-index: -1;
+ }
+ .img-card:hover .img-card-item img{
+    transform: scale(1.1);
+ }
+ 
+ 
+ .img-card-item2{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ .img-card-item2:hover{
+    z-index: 10;
+ }
+ .img-card-item2 p{
+    color: white;
+ }
+ 
+ 
+ .img-card-item img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+ }
+ /* ===================================================================== */
+ .strategy{
+    background-color: black;
+    margin: 100px 25px;
+    color: white;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 100px;
+ }
+.strategy-img img{
+    width: 700px;
+    height: 700px;
+}
+.strategy-item{
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 30px;
+}
+.strategy-item div{
+    padding: 2px 5px;
+}
+.strategy-item h2{
+    font-weight: 50px;
+    font-size: 24px;
+}
+.strategy-item div span{
+    font-size: 34px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.strategy-item div p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.strategy-item div a{
+    color: white;
+    font-size: 24px;
+    display: block;
+    margin-right: 15px;
+}
+/* =============================================================================== */
+.carousel-container{
+    margin: 50px 0;
+    padding: 10px 0;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.carousel{
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+    color: black;
+}
+.carousel h1{
+    text-align: center;
+    margin-bottom: 30px;
+}.carousel p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.carousel .card{
+    width: 1000px;
+}
+.navigate{
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.navigate div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navigate a{
+    width: 15px;
+    height: 15px;
+     margin: 0 auto;
+     display: block;
+     background-color: rgb(0, 347, 255);
+     border-radius: 100%;
+}
+/* ==========================Servis================================= */
+.servis{
+    margin: 100px 0px;
+    padding: 20px;
+}
+.servis-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.servis-container{
+    margin-top: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
+}
+.servis-item{
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+.servis-item h2{
+    color: #3A3939;
+    font-weight: 500;
+    font-size: 24px;
+}
+.servis-item p{
+    color: #4D4D4D;
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 20px;
+}
+.servis-item a{
+    text-decoration: none;
+    color: #32BDC6;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.servis-icon{
+    font-size: 30px;
+    color: #32BDC6;
+}
+/* ====================About us======================= */
+.about-us{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 80px;
+    margin: 100px 0px;
+}
+.us{
+    padding: 10px;
+}
+.about-item-img img{
+    width: 100%;
+    height: 70%;
+}
+.about-title h1{
+    font-size: 54px;
+    font-weight: 500;
+    color: #3A3939;
+}
+.about-title p{
+    color: #4D4D4D;
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.about-link{
+    text-decoration: none;
+    color: #32BDC6;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.about-Sobitem{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.about-Sobitem-item{
+    padding: 0px 10px;
+}
+.about-Sobitem-item h2{
+    font-size: 20px;
+    color: #4D4D4D;
+    font-weight: 500;
+}
+.about-Sobitem-item p{
+    margin-top: 10px;
+    font-weight: 100;
+    color: #4D4D4D;
+    line-height: 24px;
+}
+.about-Sobitem-item i{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.blog{
+    margin: 100px 10px ;
+}
+.blog-title{
+    font-size: 64px;
+    text-align: center;
+    font-weight: 500;
+}
+.blog-container{
+   margin-top: 100px;  
+   padding: 10px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 15px;
+}
+.blog-item img{
+    width: 100%;
+}
+.blog-item h1{
+    color: #32BDC6;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.blog-item h1:hover{
+    color: #2798a0;
+    cursor: pointer;
+}
+.blog-item-date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blog-item-date span{
+    color: #7c7979;
+}
