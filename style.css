@@ -23,6 +23,7 @@
 .navbar h2{
     font-size: 36px;
     font-weight: 400px;
+    cursor: default;
 }
 .navbar h2 span{
     color: #32BDC6;
@@ -73,6 +74,7 @@
 }
 .home-item p span{
     color: #32BDC6;
+    cursor: context-menu;
     transition: 0.3s;
 }
 .home-item p span:hover{
